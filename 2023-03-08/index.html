@@ -2,35 +2,54 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Übung</title>
+        <title>Exercise with Objects</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <header>
+            <h1>Exercise with Objects</h1>
+            </header>
+            <main>
+                <article class="boxStyling">
+                        <section class="flex">
+                            <div>
+                                <h2>Show Object without input</h2>
+                                <button type="button" id="catObject">Show</button>
+                            </div>
+                            <p id="objectOutput"></p>
+                        </section>
+                </article>
+                <article>
+                    <div class="boxStyling">
+                        <h2>Exercise with Input</h2>
+                        <section>
+                            <form>
+                                <div class="flex">
+                                    <label for="name">Name der Katze</label>
+                                    <input type="text" id="name" required>
+                                </div>
+                                <div class="flex">
+                                    <label for="bread">Katzenrasse</label>
+                                    <input type="number" is="age" required>
+                                </div>
+                                <div class="flex">
+                                    <label for="birth">Geboren am</label>
+                                    <input type="date" is="birth" required>
+                                </div>
+                                <button type="button" id="newCAtConstructor">
+                                    New Cat with Constructor
+                                </button>
+                                <button type="button" id="newCAtClass">New Cat with Class</button>                            </button>
+                            </form>
+                        </section>
+                    </div>
+                    <section class="boyStyling">
+                        <h2>Jüngste & älteste Katze im Array</h2>
+                        <div class="flex" id="outputAge"></div>
+                    </section>
+                </article>
+            </main>
+            <script src="main.js"></script>
 
-        <script src="main.js"></script>
-        
-        <script>
-            console.log('meine erste Ausgabe');
-
-            const firstConst = "meine erste Konstante";
-            console.log(firstConst);
-
-            let firstVariable = 'erste Variable ' + 20;
-
-            var noGo = "veraltete Methode";
-
-            console.log(firstVariable, noGo);
-
-            let myArray = [1, 2, 3, 4];
-            console.log(myArray);
-
-            console.log('10' + 5);
-
-            function quadrat(x) {
-                let result = x * x;
-                return result;
-            }
-
-            console.log(quadrat(5));
-        </script>
     </body>
 </html>
